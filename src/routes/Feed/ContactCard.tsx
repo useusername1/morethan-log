@@ -7,11 +7,12 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai"
 import styled from "@emotion/styled"
+import { Emoji } from "src/components/Emoji"
 
 const ContactCard: React.FC = () => {
   return (
     <>
-      <StyledTitle>💬 Contact</StyledTitle>
+      <StyledTitle>{`>`} Contact</StyledTitle>
       <StyledWrapper>
         {CONFIG.profile.github && (
           <a
@@ -44,7 +45,7 @@ const ContactCard: React.FC = () => {
             <div className="name">email</div>
           </a>
         )}
-        {CONFIG.profile.linkedin && (
+        {/* {CONFIG.profile.linkedin && (
           <a
             href={`https://www.linkedin.com/in/${CONFIG.profile.linkedin}`}
             rel="noreferrer"
@@ -53,7 +54,7 @@ const ContactCard: React.FC = () => {
             <AiFillLinkedin className="icon" />
             <div className="name">linkedin</div>
           </a>
-        )}
+        )} */}
       </StyledWrapper>
     </>
   )
@@ -69,15 +70,15 @@ const StyledWrapper = styled.div`
   display: flex;
   padding: 0.25rem;
   flex-direction: column;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   background-color: ${({ theme }) =>
     theme.scheme === "light" ? "white" : theme.colors.gray4};
   a {
     display: flex;
-    padding: 0.75rem;
-    gap: 0.75rem;
+    padding: 0.5rem;
+    gap: 0.6rem;
     align-items: center;
-    border-radius: 1rem;
+    border-radius: 0.3rem;
     color: ${({ theme }) => theme.colors.gray11};
     cursor: pointer;
 
@@ -86,7 +87,7 @@ const StyledWrapper = styled.div`
       background-color: ${({ theme }) => theme.colors.gray5};
     }
     .icon {
-      font-size: 1.5rem;
+      font-size: 1.1rem;
       line-height: 2rem;
     }
     .name {

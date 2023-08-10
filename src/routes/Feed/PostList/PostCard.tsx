@@ -66,7 +66,8 @@ const StyledWrapper = styled(Link)`
     overflow: hidden;
     position: relative;
     margin-bottom: 1.5rem;
-    border-radius: 1rem;
+    border-radius: 0.38rem;
+    border: 0.3px solid ${({ theme }) => theme.colors.gray5};
     background-color: ${({ theme }) =>
       theme.scheme === "light" ? "white" : theme.colors.gray4};
     transition-property: box-shadow;
@@ -78,13 +79,13 @@ const StyledWrapper = styled(Link)`
     }
 
     :hover {
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.02),
+        0 4px 20px 0px rgba(0, 0, 0, 0.02);
     }
     > .category {
       position: absolute;
-      top: 1rem;
-      left: 1rem;
+      top: 1.3rem;
+      left: 1.3rem;
       z-index: 10;
     }
 
@@ -99,7 +100,7 @@ const StyledWrapper = styled(Link)`
       }
     }
     > .content {
-      padding: 1rem;
+      padding: 1.5rem;
 
       &[data-thumb="false"] {
         padding-top: 3.5rem;
@@ -135,7 +136,7 @@ const StyledWrapper = styled(Link)`
         .content {
           font-size: 0.875rem;
           line-height: 1.25rem;
-          color: ${({ theme }) => theme.colors.gray10};
+          color: ${({ theme }) => theme.colors.gray8};
           @media (min-width: 768px) {
             margin-left: 0;
           }

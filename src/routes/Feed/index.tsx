@@ -46,7 +46,7 @@ const Feed: React.FC<Props> = () => {
           height: `calc(100vh - ${HEADER_HEIGHT}px)`,
         }}
       >
-        <ProfileCard />
+        {/* <ProfileCard /> */}
         <ServiceCard />
         <ContactCard />
         <div className="footer">
@@ -93,7 +93,7 @@ const StyledWrapper = styled.div`
     grid-column: span 12 / span 12;
 
     @media (min-width: 1024px) {
-      grid-column: span 7 / span 7;
+      grid-column: span 8 / span 7;
     }
 
     > .tags {
@@ -126,7 +126,7 @@ const StyledWrapper = styled.div`
 
     @media (min-width: 1024px) {
       display: block;
-      grid-column: span 3 / span 3;
+      grid-column: span 2 / span 2;
     }
 
     .footer {

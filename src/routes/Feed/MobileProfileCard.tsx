@@ -10,10 +10,10 @@ type Props = {
 const MobileProfileCard: React.FC<Props> = () => {
   return (
     <StyledWrapper>
-      <div className="top">💻 Profile</div>
       <div className="mid">
         <div className="wrapper">
           <Image
+            className="profile"
             src={CONFIG.profile.image}
             width={90}
             height={90}
@@ -45,22 +45,26 @@ const StyledWrapper = styled.div`
     margin-bottom: 0.75rem;
   }
   > .mid {
-    padding: 0.5rem;
+    padding: 0.7rem;
     margin-bottom: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.3rem;
     background-color: ${({ theme }) =>
       theme.scheme === "light" ? "white" : theme.colors.gray4};
     > .wrapper {
       display: flex;
       gap: 0.5rem;
       align-items: center;
+      > .profile {
+        border-radius: 100%;
+      }
       > .wrapper {
         height: fit-content;
+        margin-left: 5px;
         > .top {
           font-size: 1.25rem;
           line-height: 1.75rem;
           font-style: italic;
-          font-weight: 700;
+          font-weight: 100;
         }
         > .mid {
           margin-bottom: 0.5rem;

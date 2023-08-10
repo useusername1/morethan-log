@@ -20,7 +20,7 @@ const PostDetail: React.FC<Props> = () => {
     <StyledWrapper>
       <article>
         {category && (
-          <div css={{ marginBottom: "0.5rem" }}>
+          <div css={{ marginBottom: "2rem" }}>
             <Category readOnly={data.status?.[0] === "PublicOnDetail"}>
               {category}
             </Category>
@@ -46,14 +46,12 @@ export default PostDetail
 const StyledWrapper = styled.div`
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  border-radius: 1.5rem;
-  max-width: 56rem;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+  border-radius: 0.3rem;
+  max-width: 1120px;
   background-color: ${({ theme }) =>
     theme.scheme === "light" ? "white" : theme.colors.gray4};
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
   margin: 0 auto;
   > article {
     margin: 0 auto;
