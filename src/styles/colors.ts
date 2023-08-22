@@ -1,4 +1,5 @@
 import {
+  whiteA,
   gray,
   blue,
   red,
@@ -15,6 +16,7 @@ export type Colors = typeof colors.light & typeof colors.dark
 
 export const colors = {
   light: {
+    ...whiteA,
     ...indigo,
     ...gray,
     ...blue,

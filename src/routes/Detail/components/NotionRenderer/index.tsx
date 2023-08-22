@@ -121,4 +121,9 @@ const StyledWrapper = styled.div`
   .notion-page {
     padding: 0;
   }
+  tr,
+  td {
+    border: 1px solid
+      ${({ theme }) => (theme.scheme === "light" ? theme.colors.gray3 : "none")};
+  }
 `

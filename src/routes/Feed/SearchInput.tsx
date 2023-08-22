@@ -23,6 +23,7 @@ export default SearchInput
 const StyledWrapper = styled.div`
   margin-bottom: 1rem;
   position: relative;
+
   @media (min-width: 768px) {
     margin-bottom: 2rem;
   }
@@ -46,5 +47,8 @@ const StyledWrapper = styled.div`
     outline-style: none;
     width: 100%;
     background-color: ${({ theme }) => theme.colors.gray4};
+    ::placeholder {
+      color: ${({ theme }) => theme.colors.gray8};
+    }
   }
 `

@@ -38,13 +38,13 @@ const TagList: React.FC<Props> = () => {
         <Emoji>🏷️</Emoji> Tags
       </div>
       <div className="list">
-        {Object.keys(data).map((key) => (
+        {Object.entries(data).map(([key, value]) => (
           <a
             key={key}
             data-active={key === currentTag}
             onClick={() => handleClickTag(key)}
           >
-            {key}
+            {`${key} (${value})`}
           </a>
         ))}
       </div>
@@ -69,7 +69,7 @@ const StyledWrapper = styled.div`
     display: flex;
     margin-bottom: 1.5rem;
     gap: 0.25rem;
-    overflow: scroll;
+    overflow-x: scroll;
 
     scrollbar-width: none;
     -ms-overflow-style: none;

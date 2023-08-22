@@ -49,7 +49,9 @@ const StyledWrapper = styled.div`
     border-radius: 0.3rem;
     color: ${({ theme }) => theme.colors.gray11};
     cursor: pointer;
-
+    path {
+      fill: ${({ theme }) => theme.colors.gray11};
+    }
     :hover {
       color: ${({ theme }) => theme.colors.gray12};
       background-color: ${({ theme }) => theme.colors.gray5};

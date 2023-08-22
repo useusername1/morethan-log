@@ -27,11 +27,16 @@ const PostDetail: React.FC<Props> = () => {
           </div>
         )}
         {data.type[0] === "Post" && <PostHeader data={data} />}
+        <br />
+        <hr />
+        <br />
         <div>
           <NotionRenderer recordMap={data.recordMap} />
         </div>
         {data.type[0] === "Post" && (
           <>
+            <br />
+            <hr />
             <Footer />
             <CommentBox data={data} />
           </>
@@ -46,8 +51,8 @@ export default PostDetail
 const StyledWrapper = styled.div`
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  padding-top: 6rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   border-radius: 0.3rem;
   max-width: 1120px;
   background-color: ${({ theme }) =>

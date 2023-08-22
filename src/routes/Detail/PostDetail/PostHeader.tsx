@@ -115,8 +115,7 @@ const StyledWrapper = styled.div`
     .thumbnail {
       overflow: hidden;
       position: relative;
-      margin-bottom: 1.75rem;
-      border-radius: 1.5rem;
+      border-radius: 0.1rem;
       width: 100%;
       background-color: ${({ theme }) => theme.colors.gray4};
       padding-bottom: 66%;
