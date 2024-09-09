@@ -1,12 +1,12 @@
-import { CONFIG } from "site.config"
 import React from "react"
-import {
-  AiOutlineInstagram,
-  AiOutlineGithub,
-  AiOutlineMail,
-  AiFillLinkedin,
-} from "react-icons/ai"
 import styled from "@emotion/styled"
+import {
+  AiFillLinkedin,
+  AiOutlineGithub,
+  AiOutlineInstagram,
+  AiOutlineMail,
+} from "react-icons/ai"
+import { CONFIG } from "site.config"
 import { Emoji } from "src/components/Emoji"
 
 const ContactCard: React.FC = () => {

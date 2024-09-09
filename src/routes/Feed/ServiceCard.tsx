@@ -18,7 +18,7 @@ const ServiceCard: React.FC = () => {
             target="_blank"
           >
             <Logo />
-            <div className="name">{CONFIG.projects[0].name}</div>
+            <div className="name">{project.name}</div>
           </a>
         ))}
       </StyledWrapper>
