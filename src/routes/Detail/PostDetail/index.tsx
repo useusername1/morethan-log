@@ -62,4 +62,10 @@ const StyledWrapper = styled.div`
     margin: 0 auto;
     max-width: 42rem;
   }
+  .notion-inline-code {
+    font-family: var(--notion-font);
+  }
+  td {
+    border: 1px solid hsl(0deg 0% 90.65%);
+  }
 `
